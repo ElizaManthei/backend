@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int number[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         String letters[] = {"zero", "een", "twee", "drie", "vier", "vijf", "zes", "seven", "acht", "negen"};
 
-        Translator transl = new Translator(number, letters);
+        Translator transl = new Translator(numbers, letters);
         Scanner userIn = new Scanner(System.in);
 
         int user = 0;
