@@ -5,15 +5,12 @@
 import java.util.HashMap;
 
 public class Translator {
-   private int  number[];
-   private String letters[];
+
    private HashMap<Integer,String> numLet = new HashMap<>();
 
-    public Translator(int number[], String letters[]) {
-       this.number = number;
-       this.letters = letters;
-       for (int i = 0; i < 9; i++){
-           this.numLet.put(number[i],letters[i]);
+    public Translator(int numbers[], String letters[]) {
+       for (int i = 0; i < numbers.length; i++){
+           this.numLet.put(numbers[i],letters[i]);
        }
    }
     public  String translate(Integer number){
