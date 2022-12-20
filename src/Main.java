@@ -23,7 +23,7 @@ public class Main {
                 ofPlay = false;
                 System.out.println("Tot volgende keer.");
             } else if (userChoice.equals("v")) {
-                System.out.println("Podaj cyfre: ");
+                System.out.println("Voer een cijfer in (van 0 tot 9): ");
                 user = userIn.nextInt();
                 if (user >= 0 && user < 10) {
                     System.out.println(user + "  is " + transl.translate(user));
